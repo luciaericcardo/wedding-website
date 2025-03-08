@@ -252,12 +252,13 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero.png') center center;
+  background: url('../img/hero.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  background-position: left 70% center;
 
   /*.rsvp-btn {
     position: absolute;
@@ -281,8 +282,8 @@ Hero
     padding-top: 13%;
   }
   .hero-content img {
-    width: 15%;
-    margin-bottom: 37%;
+    width: 10%;
+    margin-bottom: 35%;
   }
 }
 .navigation {
