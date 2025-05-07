@@ -9,7 +9,7 @@
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
 	display: inline-block;
-	text-transform: uppercase;
+	text-transform: none;
 	color: $accent-color;
 }
 .btn:hover, .btn:focus {
@@ -48,7 +48,7 @@
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
 	display: inline-block;
-	text-transform: uppercase;
+	text-transform: none;
 	background-color: $accent-color;
 }
 .btn-fill:hover, .btn-fill:focus {
