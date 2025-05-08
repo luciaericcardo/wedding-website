@@ -36,8 +36,7 @@ a {
   transition-property: color, border-color, background-color;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: $accent-color-hover;
   text-decoration: none;
 }
@@ -361,7 +360,7 @@ Hero
   }
 
   .hero-date {
-    padding-top: 20%;;
+    padding-top: 20%;
   }
 }
 
@@ -374,7 +373,7 @@ Hero
 
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(86, 86, 86, 0.88);
   z-index: 999;
   width: 100%;
 }
@@ -406,7 +405,7 @@ header {
   }
 
   ul.primary-nav {
-    margin: 0 0 0 75px;
+    // margin: 0 0 0 75px;
     padding: 0;
 
     li {
@@ -418,7 +417,7 @@ header {
         // padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: $accent-color-hover;
         }
       }
 
@@ -948,7 +947,7 @@ RSVP form
       border-radius: 3px;
       width: 100%;
       font-size: 13px;
-      color: #000000;
+      color: $txt-light;
       // background-color: #000000;
     }
 
@@ -1058,6 +1057,7 @@ footer {
     font-size: 18px;
     margin: 0 2px;
   }
+
   p {
     font-size: 14px;
     margin: 0;
