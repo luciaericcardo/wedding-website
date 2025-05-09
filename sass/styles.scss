@@ -379,7 +379,7 @@ Hero
 }
 
 header {
-  padding: 50px 0;
+  padding: 40px 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
@@ -404,28 +404,23 @@ header {
     height: 19px;
   }
 
-  ul.primary-nav {
-    // margin: 0 0 0 75px;
-    padding: 0;
+  .left {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+  }
 
-    li {
-      display: inline;
-
-      a {
-        color: $txt-dark;
-        margin: 0 75px 0 75px;
-        // padding-right: 25px;
-
-        &:hover {
-          color: $accent-color-hover;
-        }
-      }
-
-      &:last-child a {
-        padding-right: 0px;
-      }
-    }
-
+  .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+  }
+  
+  .right {
+    position: absolute;
+    right: 0%;
+    top: 30%;
   }
 
   ul.member-actions {
@@ -443,7 +438,14 @@ header {
   }
 
   .header-nav {
-    display: inline-block;
+    padding: 20px;
+    a {
+        color: $txt-dark;
+
+        &:hover {
+          color: $accent-color-hover;
+        }
+    }
   }
 
   .member-actions {

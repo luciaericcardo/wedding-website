@@ -363,6 +363,25 @@
         display: none;
     }
 
+    .left {
+        right: 0%;
+        position: absolute;
+        transform: translateY(-100%);
+    }
+
+    .center {
+        left: 50%;
+    }
+
+    .right {
+        left: 0%;
+        position: absolute;
+        transform: translateY(100%);
+    }
+    
+    header {
+        padding: 50px;
+    }
 }
 
 @media screen and (max-width: 320px) {
