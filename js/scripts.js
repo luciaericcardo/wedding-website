@@ -194,7 +194,7 @@ $(document).ready(function () {
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('October 11, 2025 23:30'),
+            end: new Date('October 12, 2025 01:30'),
 
             // Event Address
             address: 'Parrocchia Sacra Famiglia, Strada Vaciglio Centro, 280, 41125 Modena MO',
