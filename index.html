@@ -175,11 +175,10 @@
                         <br>
 
                         <br>
-                        <i>Intestazione:</i> GRAZIA RICCARDO CANALINI LUCIA 
+                        <i>Intestazione:</i> GRAZIA RICCARDO CANALINI LUCIA
                         <br>
-                        <i>IBAN:</i> IT21K0339512900052102729520
-                        <br>
-                        <i>BIC-SWIFT:</i> ITTPIT2MXXX
+                        <i>IBAN:</i> <span class="user-select-all">IT21K0339512900052102729520</span>
+                        <button type="button" class="btn-small" onclick="copyToClipboard()"><i class="fa fa-clipboard"></i></button>
                     </p>
                     <p>grazie!!</p>
                 </div>
@@ -458,6 +457,18 @@
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-46465113-4', 'auto');
         ga('send', 'pageview');
+
+        const copyToClipboard = async () => {
+            try {
+                const element = document.querySelector(".user-select-all");
+                await navigator.clipboard.writeText(element.textContent);
+                console.log("Text copied to clipboard!");
+                // Optional: Display a success message to the user
+            } catch (error) {
+                console.error("Failed to copy to clipboard:", error);
+                // Optional: Display an error message to the user
+            }
+        };
     </script>
 </body>
 
